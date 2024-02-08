@@ -117,7 +117,6 @@ header{
 .grid .sdgs img{
     border-radius: 20px;
     max-width: 80%;
-    width: 400px;
     height: 400px;
     opacity: 50%;
     transition: 1s ease;
@@ -199,5 +198,8 @@ header{
     -webkit-transform: scale(1.0);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-}
+    }
+    .grid .sdgs img{
+        width: 400px;
+    }
 }
