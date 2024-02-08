@@ -114,12 +114,16 @@ header{
     padding-top: 100px;
 }
 
-.grid .sdgs img, a{
+.grid .sdgs img{
     border-radius: 20px;
     width: 90%;
     opacity: 50%;
     transition: 1s ease;
     
+}
+
+.grid .sdgs a{
+    width: 90%;
 }
 
 .grid .sdgs img:hover{
@@ -198,6 +202,9 @@ header{
     transform: scale(1.1);
     }
     .grid .sdgs img{
+        width: 400px;
+    }
+    .grid .sdgs a{
         width: 400px;
     }
 }
