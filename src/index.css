@@ -157,7 +157,7 @@ header{
 .footer{
     position: absolute;
     background-color: #2f2f2f;
-    width: 100%;
+    width: 100vw;
     left: 0;
     margin-top: 50px;
 }
