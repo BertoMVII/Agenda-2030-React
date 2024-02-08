@@ -122,6 +122,11 @@ header{
     
 }
 
+.grid .sdgs a{
+    margin: auto;
+    max-width: fit-content;
+}
+
 .grid .sdgs img:hover{
     opacity: 100%;
     -webkit-transform: scale(1.0);
