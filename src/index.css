@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Protest+Strike&display=swap');
+
+body {
+  background-color: #4f4f4f;
+  color: white;
+  
+}
+
+header{
+    background-color: #666666;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #666666;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+.header ul a:hover{
+    background-color: #4f4f4f;
+}
+
+.header .logo{
+    font-family: 'Protest Strike', sans-serif;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+.header .menu{
+    font-family: 'Protest Strike', sans-serif;
+    font-weight: lighter;
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s  ease-out;
+}
+
+.header .menu-icon{
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon{
+    background-color: white;
+    display: block;
+    width: 18px;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out ;
+}
+
+.header .menu-icon .nav-icon::before,
+.header .menu-icon .nav-icon::after {
+    background-color: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition:  all .2s ease-out;
+    position: absolute;
+}
+
+.header .menu-icon .nav-icon::before{
+    top: 5px;
+}
+.header .menu-icon .nav-icon::after{
+    bottom: 5px;
+}
+.header .menu-btn{
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu{
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background-color: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.image .sdgs{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 100px;
+}
+
+.image .sdgs img{
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    opacity: 50%;
+    transition: 1s ease;
+    
+}
+
+.image .sdgs img:hover{
+    opacity: 100%;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.sdg17{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: #2f2f2f;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.sdg17 img{
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+}
+
+
+.sdg17 .text{
+    font-family: 'Protest Strike', sans-serif;
+    margin: auto;
+    max-width: 50%;
+}
+.sdg17 h1{
+    text-align: center;
+}
+
+.footer{
+    position: absolute;
+    background-color: #2f2f2f;
+    width: 100%;
+    left: 0;
+    margin-top: 50px;
+}
+
+.footer .contacts{
+    margin: 30px 0 0 0px;
+    width: max-content;
+    margin: auto;
+}
+.footer .contacts h3, p{
+    text-align: center;
+}
+.footer a{
+    color: white;
+    text-decoration:underline;
+}
+
+@media (min-width: 48em) {
+    .header li{
+        float: left;
+    }
+   .header li a{
+    padding: 20px 30px;
+   } 
+   .header .menu{
+    clear: none;
+    float: right;
+    max-height: 235px;
+    margin: 0 50px;
+   }
+   .header .menu-icon{
+    display: none;
+   }
+}
