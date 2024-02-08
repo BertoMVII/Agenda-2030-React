@@ -122,10 +122,6 @@ header{
     
 }
 
-.grid .sdgs a{
-    width: 90%;
-}
-
 .grid .sdgs img:hover{
     opacity: 100%;
     -webkit-transform: scale(1.0);
