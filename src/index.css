@@ -200,6 +200,7 @@ header{
     transform: scale(1.1);
     }
     .grid .sdgs img{
+        max-width: max-content;
         width: 400px;
     }
 }
