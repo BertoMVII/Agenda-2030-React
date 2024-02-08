@@ -123,8 +123,8 @@ header{
 }
 
 .grid .sdgs a{
-    margin: auto;
-    max-width: fit-content;
+    align-content: center;
+    max-width: max-content;
 }
 
 .grid .sdgs img:hover{
