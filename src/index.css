@@ -50,14 +50,14 @@ header{
     transition: max-height .2s  ease-out;
 }
 
-.header .menu-icon{
+.header .menuIcon{
     padding: 28px 20px;
     position: relative;
     float: right;
     cursor: pointer;
 }
 
-.header .menu-icon .nav-icon{
+.header .menuIcon .navIcon{
     background-color: white;
     display: block;
     width: 18px;
@@ -66,8 +66,8 @@ header{
     transition: background-color .2s ease-out ;
 }
 
-.header .menu-icon .nav-icon::before,
-.header .menu-icon .nav-icon::after {
+.header .menuIcon .navIcon::before,
+.header .menuIcon .navIcon::after {
     background-color: white;
     content: "";
     display: block;
@@ -77,34 +77,34 @@ header{
     position: absolute;
 }
 
-.header .menu-icon .nav-icon::before{
+.header .menuIcon .navIcon::before{
     top: 5px;
 }
-.header .menu-icon .nav-icon::after{
+.header .menuIcon .navIcon::after{
     bottom: 5px;
 }
-.header .menu-btn{
+.header .menuBtn{
     display: none;
 }
 
-.header .menu-btn:checked ~ .menu{
+.header .menuBtn:checked ~ .menu{
     max-height: 240px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon{
+.header .menuBtn:checked ~ .menuIcon .navIcon{
     background-color: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon::before{
+.header .menuBtn:checked ~ .menuIcon .navIcon::before{
     transform: rotate(-45deg);
     top: 0;
 }
-.header .menu-btn:checked ~ .menu-icon .nav-icon::after{
+.header .menuBtn:checked ~ .menuIcon .navIcon::after{
     transform: rotate(45deg);
     top: 0;
 }
 
-.image .sdgs{
+.grid .sdgs{
     margin: auto;
     width: 80%;
     display: flex;
@@ -114,7 +114,7 @@ header{
     padding-top: 100px;
 }
 
-.image .sdgs img{
+.grid .sdgs img{
     border-radius: 20px;
     width: 400px;
     height: 400px;
@@ -123,7 +123,7 @@ header{
     
 }
 
-.image .sdgs img:hover{
+.grid .sdgs img:hover{
     opacity: 100%;
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -190,7 +190,7 @@ header{
     max-height: 235px;
     margin: 0 50px;
    }
-   .header .menu-icon{
+   .header .menuIcon{
     display: none;
    }
 }
