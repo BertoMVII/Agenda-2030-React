@@ -9,7 +9,7 @@ Una volta scaricata la repository e installato [node.js](https://nodejs.org/en),
 
 ```bash
 npm install
-npm run preview
+npm start
 ```
 N.B.  npm install da eseguire solo se è la prima volta che eseguite il progetto.
 
