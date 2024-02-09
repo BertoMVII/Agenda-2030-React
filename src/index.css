@@ -175,7 +175,7 @@ header{
     text-decoration:underline;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 48rem) {
     .header li{
         float: left;
     }
