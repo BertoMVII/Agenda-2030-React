@@ -1,0 +1,30 @@
+{
+  "obiettivo1": {
+    "id": 1,
+    "title": "Primo Obiettivo",
+    "color": "#3498db",
+    "subtitle": "Realizzare un progetto innovativo",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "image": "path/to/image1.jpg",
+    "video": "https://www.example.com/video1.mp4"
+  },
+  "obiettivo2": {
+    "id": 2,
+    "title": "Secondo Obiettivo",
+    "color": "#e74c3c",
+    "subtitle": "Migliorare l'esperienza utente",
+    "paragraph": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+    "image": "path/to/image2.jpg",
+    "video": "https://www.example.com/video2.mp4"
+  },
+  "obiettivo3": {
+    "id": 3,
+    "title": "Terzo Obiettivo",
+    "color": "#2ecc71",
+    "subtitle": "Espandere la base di utenti",
+    "paragraph": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
+    "image": "path/to/image3.jpg",
+    "video": "https://www.example.com/video3.mp4"
+  }
+
+}

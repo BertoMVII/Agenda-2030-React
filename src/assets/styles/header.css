@@ -1,0 +1,122 @@
+.header{
+    background-color: #666666;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #666666;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.header ul a:hover{
+    background-color: #4f4f4f;
+}
+
+.header .logo{
+    font-family: 'Protest Strike', sans-serif;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+.header .menu{
+    font-family: 'Protest Strike', sans-serif;
+    font-weight: lighter;
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s  ease-out;
+}
+
+.header .menuIcon{
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menuIcon .navIcon{
+    background-color: white;
+    display: block;
+    width: 18px;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out ;
+}
+
+.header .menu a{
+    width: 100%;
+}
+
+.header .menuIcon .navIcon::before,
+.header .menuIcon .navIcon::after {
+    background-color: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition:  all .2s ease-out;
+    position: absolute;
+}
+
+.header .menuIcon .navIcon::before{
+    top: 5px;
+}
+.header .menuIcon .navIcon::after{
+    bottom: 5px;
+}
+.header .menuBtn{
+    display: none;
+}
+
+.header .menuBtn:checked ~ .menu{
+    max-height: 240px;
+}
+
+.header .menuBtn:checked ~ .menuIcon .navIcon{
+    background-color: transparent;
+}
+
+.header .menuBtn:checked ~ .menuIcon .navIcon::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.header .menuBtn:checked ~ .menuIcon .navIcon::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media (min-width: 48rem) {
+    .header li{
+        float: left;
+    }
+   .header li a{
+    padding: 20px 30px;
+   } 
+   .header .menu{
+    clear: none;
+    float: right;
+    max-height: 235px;
+    margin: 0 50px;
+   }
+   .header .menuIcon{
+    display: none;
+   }
+   .header .menu a{
+    width: max-content;
+   }
+
+}
