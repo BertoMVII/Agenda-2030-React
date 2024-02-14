@@ -1,0 +1,49 @@
+
+.container Obiettivo{
+    position: static;
+}
+.title{
+    font-size: 2.4em;
+    font-weight: 900;
+}
+.subtitle{
+    font-size: 1.8em;
+    font-weight: 700;
+    padding-block: 8px;
+    text-align: 15px;
+}
+.paragraph{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-bottom: 2px;
+    font-weight:normal;
+}
+.list li{
+    font-size: 1.2rem;
+    margin-block: 5px;
+    list-style-type: disc;
+}
+.list ul{
+    padding-left: 20px;
+    padding-bottom: 8px;
+}
+.specific-goal-title{
+    padding-block: 100px;
+    color: white;
+    text-align: center;
+}
+.goal-image {
+    display: flex;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 900px){
+    .adjust-goal-container{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

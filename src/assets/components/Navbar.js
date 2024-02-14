@@ -1,17 +1,38 @@
 import '../styles/header.css';
+import React, { useState } from 'react';
+
+
 export default function Navbar(){
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
+
   return (
-    <div className='header'>
-    <a href='/' classname='logo'>Agenda 2030</a>
-    <input type='checkbox' class='menuBtn' id='menuBtn' />
-    <label for='menuBtn' class='menuIcon'>
-      <span class='navIcon'></span>
-    </label>
-    <ul class='menu'>
-      <li><a href='/'>Home</a></li>
-      <li><a href='#'>Obiettivi</a></li>
-      <li><a href='/quiz'>Quiz</a></li>
-    </ul>
-    </div>
+    <div className='nav'>
+    <input type='checkbox' class='menuBtn' id='menuBtn' hecked={isChecked}
+        onChange={handleCheckboxChange}/>
+    <div className='visible'>
+        <label for='menuBtn' class='menuIcon'>
+          <span class='navIcon'></span>
+        </label>
+        <a href='/'><h1>Agenda 2030</h1></a>
+      </div>
+        <div className='menu' >
+          <div className='list'>
+            <ul>
+              <li><a href='/' data-text="Home">Home</a></li>
+              <li><a href='/obiettivo1' data-text="Obiettivi">Obiettivi</a></li>
+              <li><a href='/quiz' data-text="Quiz">Quiz</a></li>
+            </ul>
+          </div>
+      </div>
+      <style jsx>{`
+        body {
+          ${isChecked ? `overflow: hidden;` : `overflow: auto;`}
+        }
+      `}</style>
+  </div>
   );
-}
+};

@@ -1,69 +1,137 @@
-.header{
-    background-color: #666666;
-    position: fixed;
-    top: 0;
-    left: 0;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+.visible{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  margin: auto;
+  height: 100px;
+}
+
+.nav .visible a h1{
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  z-index: 2;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+
+.menu{
+    display: none;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
     z-index: 1;
+    background-color: beige;
 }
 
-.header ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: #666666;
-}
-
-.header a{
-    color: white;
-    text-decoration: none;
+.menu::before{
+    content: '';
     display: inline-block;
-    padding: 20px;
+    height: 100%;
+    vertical-align: middle;
 }
 
-.header ul a:hover{
-    background-color: #4f4f4f;
+.list{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.header .logo{
-    font-family: 'Protest Strike', sans-serif;
-    float: left;
-    font-size: 2em;
-    padding: 10px 20px;
+.nav .menuBtn:checked ~ .menu{
+    display: block;
 }
 
-.header .menu{
-    font-family: 'Protest Strike', sans-serif;
-    font-weight: lighter;
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s  ease-out;
-}
-
-.header .menuIcon{
-    padding: 28px 20px;
+.menu ul {
     position: relative;
+  }
+.menu ul li {
+    list-style: none;
+    text-align: center;
+  }
+.menu ul li a {
+    font-family: "Inter", sans-serif;
+    color: #333;
+    text-decoration: none;
+    font-size: 3em;
+    padding: 5px 20px;
+    display: inline-flex;
+    font-weight: 800;
+    transition: 0.5s;
+  }
+.menu  ul:hover li a {
+    color: #0002;
+  }
+.menu ul li:hover a {
+    color: #000;
+    background: transparent;
+  }
+.menu ul li a:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 500px;
+    transition: letter-spacing 0.5s, left 0.5s;
+  }
+.menu ul li a:hover:before {
+    content: attr(data-text);
+    opacity: 1;
+    left: 50%;
+    letter-spacing: 10px;
+    width: 1500px;
+    height: 1500px;
+    font-size: 250px;
+  }
+.menu  ul li:nth-child(6n + 1) a:before {
+    background: #0470fe;
+  }
+.menu  ul li:nth-child(6n + 2) a:before {
+    background: #ff7675;
+  }
+.menu li:nth-child(6n + 3) a:before {
+    background: #1582fe;
+  }
+
+.nav .menuIcon{
+    z-index: 2;
+    padding: 28px 20px;
     float: right;
     cursor: pointer;
 }
 
-.header .menuIcon .navIcon{
-    background-color: white;
+.nav .menuIcon .navIcon{
+    background-color: black;
     display: block;
     width: 18px;
     height: 2px;
-    position: relative;
+    position: absolute;
     transition: background-color .2s ease-out ;
 }
 
-.header .menu a{
-    width: 100%;
-}
-
-.header .menuIcon .navIcon::before,
-.header .menuIcon .navIcon::after {
-    background-color: white;
+.nav .menuIcon .navIcon::before,
+.nav .menuIcon .navIcon::after {
+    background-color: black;
     content: "";
     display: block;
     height: 100%;
@@ -71,52 +139,26 @@
     transition:  all .2s ease-out;
     position: absolute;
 }
-
-.header .menuIcon .navIcon::before{
+.nav .menuIcon .navIcon::before{
     top: 5px;
 }
-.header .menuIcon .navIcon::after{
+.nav .menuIcon .navIcon::after{
     bottom: 5px;
 }
-.header .menuBtn{
+
+.menuBtn{
     display: none;
 }
 
-.header .menuBtn:checked ~ .menu{
-    max-height: 240px;
-}
-
-.header .menuBtn:checked ~ .menuIcon .navIcon{
+.menuBtn:checked ~ .menuIcon .navIcon{
     background-color: transparent;
 }
 
-.header .menuBtn:checked ~ .menuIcon .navIcon::before{
+.menuBtn:checked ~ .menuIcon .navIcon::before{
     transform: rotate(-45deg);
     top: 0;
 }
-.header .menuBtn:checked ~ .menuIcon .navIcon::after{
+.menuBtn:checked ~ .menuIcon .navIcon::after{
     transform: rotate(45deg);
     top: 0;
-}
-
-@media (min-width: 48rem) {
-    .header li{
-        float: left;
-    }
-   .header li a{
-    padding: 20px 30px;
-   } 
-   .header .menu{
-    clear: none;
-    float: right;
-    max-height: 235px;
-    margin: 0 50px;
-   }
-   .header .menuIcon{
-    display: none;
-   }
-   .header .menu a{
-    width: max-content;
-   }
-
 }

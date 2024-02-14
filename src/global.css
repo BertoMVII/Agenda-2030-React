@@ -6,8 +6,16 @@
     list-style-type: none;
     font-family: 'Open Sans', sans-serif;
 }
-body{
-  background-color: #2f2f2f;
+*::selection{
+  background-color: #66C7F4;
+}
+img{
+  -ms-user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 .container {
     padding-right: 15px;
@@ -15,6 +23,7 @@ body{
     margin-right: auto;
     margin-left: auto;
   }
+
   @media (min-width: 768px) {
     .container {
       width: 750px;

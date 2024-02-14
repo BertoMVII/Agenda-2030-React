@@ -1,30 +1,75 @@
 {
   "obiettivo1": {
     "id": 1,
-    "title": "Primo Obiettivo",
+    "title": "Fine della povertà",
     "color": "#3498db",
-    "subtitle": "Realizzare un progetto innovativo",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-    "image": "path/to/image1.jpg",
+    "subtitle1": "Porre fine alla povertà in tutte le sue forme ovunque",
+    "paragraph1": "Eradicare la povertà estrema entro il 2030. Nonostante i progressi significativi, una persona su cinque nelle regioni in via di sviluppo vive ancora con meno di $1.25 al giorno. Affrontare le cause profonde della povertà, inclusa la mancanza di accesso a risorse, mezzi di sussistenza sostenibili, istruzione e partecipazione sociale.",
+    "list1": "Eradicare la povertà estrema / Ridurre della metà la proporzione di uomini, donne e bambini che vivono in povertà / Garantire l'uguaglianza nell'accesso a risorse e servizi di base",
+    "image1": "https://asvis.it/plugins/slir/w960-/public/asvis2/images/Notizie_2023/onu.jpg",
+    "subtitle2": "Promuovere lo sviluppo sostenibile",
+    "paragraph2": "Raggiungere una crescita economica sostenuta e inclusiva. Favorire la resilienza alle sfide ambientali, economiche e sociali. Promuovere l'inclusione sociale, eradicare la discriminazione e assicurare pari opportunità per tutti.",
+    "list2": "Promuovere la crescita economica / Costruire resilienza ai cambiamenti climatici / Eliminare la discriminazione e garantire pari opportunità",
+    "image2": "path/to/image2.jpg",
     "video": "https://www.example.com/video1.mp4"
   },
   "obiettivo2": {
     "id": 2,
-    "title": "Secondo Obiettivo",
+    "title": "Fine fame nel mondo",
     "color": "#e74c3c",
-    "subtitle": "Migliorare l'esperienza utente",
-    "paragraph": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
-    "image": "path/to/image2.jpg",
+    "subtitle1": "Porre fine alla fame, raggiungere la sicurezza alimentare e migliorare la nutrizione",
+    "paragraph1": "Raggiungere la sicurezza alimentare, porre fine alla fame e promuovere una agricoltura sostenibile. Garantire accesso equo e sostenibile a sistemi alimentari efficienti. Eliminare la malnutrizione e promuovere pratiche agricole sostenibili.",
+    "list1": "Raggiungere la sicurezza alimentare / Porre fine alla fame / Promuovere pratiche agricole sostenibili",
+    "image1": "path/to/image2.jpg",
+    "subtitle2": "Promuovere l'agricoltura sostenibile",
+    "paragraph2": "Sostenere pratiche agricole sostenibili e resilienti. Garantire la disponibilità di risorse e tecnologie per tutti gli agricoltori. Aumentare gli investimenti nell'agricoltura e favorire la cooperazione tra agricoltori a livello globale.",
+    "list2": "Sostenere pratiche agricole sostenibili / Garantire risorse e tecnologie agricole / Aumentare gli investimenti nell'agricoltura",
+    "image2": "path/to/image3.jpg",
     "video": "https://www.example.com/video2.mp4"
   },
   "obiettivo3": {
-    "id": 3,
-    "title": "Terzo Obiettivo",
-    "color": "#2ecc71",
-    "subtitle": "Espandere la base di utenti",
-    "paragraph": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
-    "image": "path/to/image3.jpg",
-    "video": "https://www.example.com/video3.mp4"
+    
+  },
+  "obiettivo4": {
+    
+  },
+  "obiettivo5": {
+    
+  },
+  "obiettivo6": {
+    
+  },
+  "obiettivo7": {
+   
+  },
+  "obiettivo8": {
+    
+  },
+  "obiettivo9": {
+    
+  },
+  "obiettivo10": {
+    
+  },
+  "obiettivo11": {
+   
+  },
+  "obiettivo12": {
+  
+  },
+  "obiettivo13": {
+  
+  },
+  "obiettivo14": {
+   
+  },
+  "obiettivo15": {
+   
+  },
+  "obiettivo16": {
+    
+  },
+  "obiettivo17": {
+    
   }
-
 }
