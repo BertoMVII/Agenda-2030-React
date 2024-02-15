@@ -134,7 +134,7 @@
     background-color: black;
     content: "";
     display: block;
-    height: 100%;
+    height: 2px;
     width: 100%;
     transition:  all .2s ease-out;
     position: absolute;
@@ -146,19 +146,19 @@
     bottom: 5px;
 }
 
-.menuBtn{
+.nav .menuBtn{
     display: none;
 }
 
-.menuBtn:checked ~ .menuIcon .navIcon{
+.nav .menuBtn:checked ~ .nav .menuIcon .navIcon{
     background-color: transparent;
 }
 
-.menuBtn:checked ~ .menuIcon .navIcon::before{
+.nav .menuBtn:checked ~ .nav .menuIcon .navIcon::before{
     transform: rotate(-45deg);
     top: 0;
 }
-.menuBtn:checked ~ .menuIcon .navIcon::after{
+.nav .menuBtn:checked ~ .nav .menuIcon .navIcon::after{
     transform: rotate(45deg);
     top: 0;
 }
