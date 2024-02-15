@@ -27,6 +27,11 @@ export default function Navbar(){
               <li><a href='/quiz' data-text="Quiz">Quiz</a></li>
             </ul>
           </div>
+          <style jsx>{`
+            body {
+              ${isChecked ? `overflow: hidden;` : `overflow: auto;`}
+        }
+      `}</style>
       </div>
   </div>
   );
