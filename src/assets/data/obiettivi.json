@@ -98,7 +98,18 @@
     "video": "https://www.example.com/video5.mp4"
   },
   "obiettivo8": {
-    
+    "id": 8,
+    "title": "Parità di genere",
+    "color": "#ED402F",
+    "subtitle1": "Raggiungere l’uguaglianza di genere ed emancipare tutte le donne e le ragazze",
+    "paragraphy1": "Eradicare la povertà estrema entro il 2030. Nonostante i progressi significativi, una persona su cinque nelle regioni in via di sviluppo vive ancora con meno di $1.25 al giorno. Affrontare le cause profonde della povertà, inclusa la mancanza di accesso a risorse, mezzi di sussistenza sostenibili, istruzione e partecipazione sociale.",
+    "list1": "Eradicare la povertà estrema / Ridurre della metà la proporzione di uomini, donne e bambini che vivono in povertà / Garantire l'uguaglianza nell'accesso a risorse e servizi di base",
+    "image1": "https://asvis.it/plugins/slir/w960-/public/asvis2/images/Notizie_2023/onu.jpg",
+    "subtitle2": "Promuovere lo sviluppo sostenibile",
+    "paragraph2": "Raggiungere una crescita economica sostenuta e inclusiva. Favorire la resilienza alle sfide ambientali, economiche e sociali. Promuovere l'inclusione sociale, eradicare la discriminazione e assicurare pari opportunità per tutti.",
+    "list2": "Promuovere la crescita economica / Costruire resilienza ai cambiamenti climatici / Eliminare la discriminazione e garantire pari opportunità",
+    "image2": "path/to/image4.jpg",
+    "video": "https://www.example.com/video5.mp4"
   },
   "obiettivo9": {
     
