@@ -101,7 +101,7 @@
     letter-spacing: 10px;
     width: 1500px;
     height: 1500px;
-    font-size: 250px;
+    font-size: 230px;
   }
 .menu  ul li:nth-child(6n + 1) a:before {
     background: #0470fe;
