@@ -28,19 +28,74 @@
     "video": "https://www.example.com/video2.mp4"
   },
   "obiettivo3": {
-    
+    "id": 3,
+    "title": "Fine della povertà",
+    "color": "#4CA247",
+    "subtitle1": "Assicurare la salute e il benessere per tutti e per tutte le età",
+    "paragraph1": "Eradicare la povertà estrema entro il 2030. Nonostante i progressi significativi, una persona su cinque nelle regioni in via di sviluppo vive ancora con meno di $1.25 al giorno. Affrontare le cause profonde della povertà, inclusa la mancanza di accesso a risorse, mezzi di sussistenza sostenibili, istruzione e partecipazione sociale.",
+    "list1": "Eradicare la povertà estrema / Ridurre della metà la proporzione di uomini, donne e bambini che vivono in povertà / Garantire l'uguaglianza nell'accesso a risorse e servizi di base",
+    "image1": "https://asvis.it/plugins/slir/w960-/public/asvis2/images/Notizie_2023/onu.jpg",
+    "subtitle2": "Promuovere lo sviluppo sostenibile",
+    "paragraph2": "Raggiungere una crescita economica sostenuta e inclusiva. Favorire la resilienza alle sfide ambientali, economiche e sociali. Promuovere l'inclusione sociale, eradicare la discriminazione e assicurare pari opportunità per tutti.",
+    "list2": "Promuovere la crescita economica / Costruire resilienza ai cambiamenti climatici / Eliminare la discriminazione e garantire pari opportunità",
+    "image2": "path/to/image4.jpg",
+    "video": "https://www.example.com/video3.mp4"
   },
   "obiettivo4": {
-    
+    "id": 4,
+    "title": "Istruzione di qualità",
+    "color": "#C7212F",
+    "subtitle1": "Fornire un’educazione di qualità, equa ed inclusiva, e opportunità di apprendimento per tutti",
+    "paragraphy1": "Eradicare la povertà estrema entro il 2030. Nonostante i progressi significativi, una persona su cinque nelle regioni in via di sviluppo vive ancora con meno di $1.25 al giorno. Affrontare le cause profonde della povertà, inclusa la mancanza di accesso a risorse, mezzi di sussistenza sostenibili, istruzione e partecipazione sociale.",
+    "list1": "Eradicare la povertà estrema / Ridurre della metà la proporzione di uomini, donne e bambini che vivono in povertà / Garantire l'uguaglianza nell'accesso a risorse e servizi di base",
+    "image1": "https://asvis.it/plugins/slir/w960-/public/asvis2/images/Notizie_2023/onu.jpg",
+    "subtitle2": "Promuovere lo sviluppo sostenibile",
+    "paragraph2": "Raggiungere una crescita economica sostenuta e inclusiva. Favorire la resilienza alle sfide ambientali, economiche e sociali. Promuovere l'inclusione sociale, eradicare la discriminazione e assicurare pari opportunità per tutti.",
+    "list2": "Promuovere la crescita economica / Costruire resilienza ai cambiamenti climatici / Eliminare la discriminazione e garantire pari opportunità",
+    "image2": "path/to/image4.jpg",
+    "video": "https://www.example.com/video4.mp4"
   },
   "obiettivo5": {
-    
+    "id": 5,
+    "title": "Parità di genere",
+    "color": "#ED402F",
+    "subtitle1": "Raggiungere l’uguaglianza di genere ed emancipare tutte le donne e le ragazze",
+    "paragraphy1": "Eradicare la povertà estrema entro il 2030. Nonostante i progressi significativi, una persona su cinque nelle regioni in via di sviluppo vive ancora con meno di $1.25 al giorno. Affrontare le cause profonde della povertà, inclusa la mancanza di accesso a risorse, mezzi di sussistenza sostenibili, istruzione e partecipazione sociale.",
+    "list1": "Eradicare la povertà estrema / Ridurre della metà la proporzione di uomini, donne e bambini che vivono in povertà / Garantire l'uguaglianza nell'accesso a risorse e servizi di base",
+    "image1": "https://asvis.it/plugins/slir/w960-/public/asvis2/images/Notizie_2023/onu.jpg",
+    "subtitle2": "Promuovere lo sviluppo sostenibile",
+    "paragraph2": "Raggiungere una crescita economica sostenuta e inclusiva. Favorire la resilienza alle sfide ambientali, economiche e sociali. Promuovere l'inclusione sociale, eradicare la discriminazione e assicurare pari opportunità per tutti.",
+    "list2": "Promuovere la crescita economica / Costruire resilienza ai cambiamenti climatici / Eliminare la discriminazione e garantire pari opportunità",
+    "image2": "path/to/image4.jpg",
+    "video": "https://www.example.com/video5.mp4"
   },
   "obiettivo6": {
-    
+    "id": 6,
+    "title": "Acqua pulita e servizi igienico-sanitari",
+    "color": "#28C1E8",
+    "subtitle1": "Garantire a tutti la disponibilità e la gestione sostenibile dell’acqua e delle strutture igienico-sanitarie",
+    "paragraphy1": "Eradicare la povertà estrema entro il 2030. Nonostante i progressi significativi, una persona su cinque nelle regioni in via di sviluppo vive ancora con meno di $1.25 al giorno. Affrontare le cause profonde della povertà, inclusa la mancanza di accesso a risorse, mezzi di sussistenza sostenibili, istruzione e partecipazione sociale.",
+    "list1": "Eradicare la povertà estrema / Ridurre della metà la proporzione di uomini, donne e bambini che vivono in povertà / Garantire l'uguaglianza nell'accesso a risorse e servizi di base",
+    "image1": "https://asvis.it/plugins/slir/w960-/public/asvis2/images/Notizie_2023/onu.jpg",
+    "subtitle2": "Promuovere lo sviluppo sostenibile",
+    "paragraph2": "Raggiungere una crescita economica sostenuta e inclusiva. Favorire la resilienza alle sfide ambientali, economiche e sociali. Promuovere l'inclusione sociale, eradicare la discriminazione e assicurare pari opportunità per tutti.",
+    "list2": "Promuovere la crescita economica / Costruire resilienza ai cambiamenti climatici / Eliminare la discriminazione e garantire pari opportunità",
+    "image2": "path/to/image4.jpg",
+    "video": "https://www.example.com/video5.mp4"
   },
   "obiettivo7": {
-   
+   "id": 7,
+    "title": "Energia pulita e acessibile",
+    "color": "#FBC315",
+    "subtitle1": "Assicurare a tutti l’accesso a sistemi di energia economici, affidabili, sostenibili e moderni",
+    "paragraphy1": "Eradicare la povertà estrema entro il 2030. Nonostante i progressi significativi, una persona su cinque nelle regioni in via di sviluppo vive ancora con meno di $1.25 al giorno. Affrontare le cause profonde della povertà, inclusa la mancanza di accesso a risorse, mezzi di sussistenza sostenibili, istruzione e partecipazione sociale.",
+    "list1": "Eradicare la povertà estrema / Ridurre della metà la proporzione di uomini, donne e bambini che vivono in povertà / Garantire l'uguaglianza nell'accesso a risorse e servizi di base",
+    "image1": "https://asvis.it/plugins/slir/w960-/public/asvis2/images/Notizie_2023/onu.jpg",
+    "subtitle2": "Promuovere lo sviluppo sostenibile",
+    "paragraph2": "Raggiungere una crescita economica sostenuta e inclusiva. Favorire la resilienza alle sfide ambientali, economiche e sociali. Promuovere l'inclusione sociale, eradicare la discriminazione e assicurare pari opportunità per tutti.",
+    "list2": "Promuovere la crescita economica / Costruire resilienza ai cambiamenti climatici / Eliminare la discriminazione e garantire pari opportunità",
+    "image2": "path/to/image4.jpg",
+    "video": "https://www.example.com/video5.mp4"
   },
   "obiettivo8": {
     
