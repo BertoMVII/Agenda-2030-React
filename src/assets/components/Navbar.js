@@ -28,11 +28,6 @@ export default function Navbar(){
             </ul>
           </div>
       </div>
-      <style jsx>{`
-        body {
-          ${isChecked ? `overflow: hidden;` : `overflow: auto;`}
-        }
-      `}</style>
   </div>
   );
 };
