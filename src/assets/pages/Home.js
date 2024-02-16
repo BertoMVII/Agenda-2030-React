@@ -1,6 +1,7 @@
 import '../styles/home.css';
 import Reveal from "react-awesome-reveal";
 import { keyframes } from '@emotion/react';
+import { useEffect } from "react"
 import SDG1 from '../img/index/icon/SDG1.jpg'
 import SDG2 from '../img/index/icon/SDG2.jpg'
 import SDG3 from '../img/index/icon/SDG3.jpg'
@@ -19,6 +20,9 @@ import SDG15 from '../img/index/icon/SDG15.jpg'
 import SDG16 from '../img/index/icon/SDG16.jpg'
 import SDG17 from '../img/index/icon/SDG17.jpg'
 
+
+ 
+
 const Animation = keyframes`
   from {
     opacity: 0;
@@ -29,6 +33,8 @@ const Animation = keyframes`
     transform: translate(0, 0);
   }
 `;
+
+
 export default function Home(){
   return (
     <div className='container'>
@@ -52,6 +58,12 @@ export default function Home(){
         <a href='/obiettivo16'><img src={SDG16} alt='SDG 16' /></a>
         <a href='/obiettivo17'><img src={SDG17} alt='SDG 17' /></a>
       </Reveal>
+    </div>
+
+    <div className='circles'>
+    <div className='circle1'></div>
+    <div className='circle2'></div>
+    <div className='circle3'></div>
     </div>
     </div>
   );

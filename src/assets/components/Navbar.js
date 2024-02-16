@@ -35,10 +35,10 @@ export default function Navbar(){
               ${isChecked ? `background-color: transparent;` : `background-color: black;`}
             }
             .navIcon::before{
-              ${isChecked ? `transform: rotate(-45deg);`: `transform: rotate(0);`}
+              ${isChecked ? `transform: rotate(-45deg); top: 0;`: `transform: rotate(0); top:5px;`}
             }
             .navIcon::after{
-              ${isChecked ? `transform: rotate(45deg);`: `transform: rotate(0);`}
+              ${isChecked ? `transform: rotate(45deg); bottom: 0;`: `transform: rotate(0); bottom: 5px;`}
             }
       `}</style>
       </div>
