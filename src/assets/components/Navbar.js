@@ -31,14 +31,14 @@ export default function Navbar(){
             body {
               ${isChecked ? `overflow: hidden;` : `overflow: auto;`}
             }
-            .navIcon{
-              ${isChecked ? `background-color: transparent;`: `background-color: black;`}
+            .navIcon {
+              ${isChecked ? `background-color: transparent;` : `background-color: black;`}
             }
             .navIcon::before{
-              ${isChecked ? `transform: rotate(-45deg); top: 0;`: `transform: rotate(0); top: 5;`}
+              ${isChecked ? `transform: rotate(-45deg);`: `transform: rotate(0);`}
             }
             .navIcon::after{
-              ${isChecked ? `transform: rotate(45deg); bottom: 0;`: `transform: rotate(0); bottom: 5;`}
+              ${isChecked ? `transform: rotate(45deg);`: `transform: rotate(0);`}
             }
       `}</style>
       </div>
