@@ -30,7 +30,16 @@ export default function Navbar(){
           <style jsx>{`
             body {
               ${isChecked ? `overflow: hidden;` : `overflow: auto;`}
-        }
+            }
+            .navIcon{
+              ${isChecked ? `background-color: transparent;`: `background-color: black;`}
+            }
+            .navIcon::before{
+              ${isChecked ? `transform: rotate(-45deg); top: 0;`: `transform: rotate(0); top: 5;`}
+            }
+            .navIcon::after{
+              ${isChecked ? `transform: rotate(45deg); bottom: 0;`: `transform: rotate(0); bottom: 5;`}
+            }
       `}</style>
       </div>
   </div>
