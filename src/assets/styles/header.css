@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-
 .visible{
   display: flex;
   justify-content: space-between;
@@ -22,13 +21,13 @@
 
 
 .menu{
-    display: none;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     z-index: 1;
     background-color: beige;
+    transition: 0.5s;
 }
 
 .menu::before{
@@ -44,10 +43,6 @@
     margin: auto;
     display: inline-block;
     vertical-align: middle;
-}
-
-.nav .menuBtn:checked ~ .menu{
-    display: block;
 }
 
 .menu ul {
@@ -142,3 +137,6 @@
     display: none;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}

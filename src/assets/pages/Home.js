@@ -1,7 +1,6 @@
 import '../styles/home.css';
 import Reveal from "react-awesome-reveal";
 import { keyframes } from '@emotion/react';
-import { useEffect } from "react"
 import SDG1 from '../img/index/icon/SDG1.jpg'
 import SDG2 from '../img/index/icon/SDG2.jpg'
 import SDG3 from '../img/index/icon/SDG3.jpg'
