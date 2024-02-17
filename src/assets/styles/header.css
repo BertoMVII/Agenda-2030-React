@@ -3,13 +3,14 @@
 body{
   overflow-x: hidden;
 }
+
 .visible{
   display: flex;
   justify-content: space-between;
   width: 90%;
   align-items: center;
   margin: auto;
-  height: 100px;
+  height: 70px;
 }
 
 .nav .visible a h1{
@@ -40,7 +41,7 @@ body{
     vertical-align: middle;
 }
 
-.list{
+.listMenu{
     width: 100%;
     height: fit-content;
     margin: auto;

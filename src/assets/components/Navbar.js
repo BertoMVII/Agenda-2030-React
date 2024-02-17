@@ -20,7 +20,7 @@ export default function Navbar(){
         <a href='/'><h1>Agenda 2030</h1></a>
       </div>
         <div className='menu' >
-          <div className='list'>
+          <div className='listMenu'>
             <ul>
               <li><a href='/' data-text="Home">Home</a></li>
               <li><a href='/obiettivo1' data-text="Obiettivi">Obiettivi</a></li>
@@ -41,7 +41,7 @@ export default function Navbar(){
               ${isChecked ? `transform: rotate(45deg); bottom: 0;`: `transform: rotate(0); bottom: 5px;`}
             }
             .menu {
-              ${isChecked ? `transform: translateX(0);` : `transform: translateX(100%);`}
+              ${isChecked ? `left: 0;` : `left:150%;`}
             }
       `}</style>
       </div>
