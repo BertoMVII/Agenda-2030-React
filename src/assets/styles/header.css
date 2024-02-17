@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+body{
+  overflow-x: hidden;
+}
 .visible{
   display: flex;
   justify-content: space-between;
