@@ -93,7 +93,7 @@ body{
     transition: letter-spacing 0.5s, left 0.5s;
   }
 .menu ul li a:hover:before {
-    content: attr(data-text);
+    content: "";
     opacity: 1;
     left: 50%;
     letter-spacing: 10px;
@@ -143,4 +143,10 @@ body{
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+@media (min-width: 48rem) {
+  .menu ul li a:hover:before{
+    content: attr(data-text);
+  }
 }
