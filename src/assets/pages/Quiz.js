@@ -1,7 +1,10 @@
+import React, { useState, useRef } from "react";
+import '../styles/quiz.css'
+
 export default function Quiz(){
-  return (
+return(
   <>
-    Hello from 'Quiz'
+    questo è un quiz
   </>
-  );
+  )
 }

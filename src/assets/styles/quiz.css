@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+.quizContainer{
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(248, 248, 248);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 40px 50px;
+}
+.quizContainer hr{
+    height: 2px;
+    border: none;
+    background-color: rgb(65, 65, 65);
+}
+.quizContainer h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 27px;
+}
+
+.quizContainer ul li{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 15px;
+    border: solid rgb(97, 97, 97);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font: 20px;
+    cursor: pointer;
+}
+
+.quizContainer button{
+    margin: auto;
+    width: 250px;
+    height: 65px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #0470fe;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.quizContainer .index{
+    margin: auto;
+    font: 18px;
+
+}
+
+.correct{
+    background-color: #aafedc;
+    border: #00d392;
+}
+
+.wrong{
+    background-color: #fc9c9c;
+    border-color: #ff4a4a;
+}
