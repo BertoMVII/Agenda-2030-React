@@ -94,7 +94,7 @@ export default function Quiz(){
 
       </ul>
       <button onClick={next}>Prossimo </button>
-      <div className="Index"> {index+1} di {questions.length} domande</div></>}
+      <div className="Index"> {index} di {questions.length-1} domande</div></>}
       {result?<>
       <h2>Hai ottenuto un punteggio di: {score} su {questions.length-1}</h2>
      <button onClick={handleSubmit}>Home</button>
