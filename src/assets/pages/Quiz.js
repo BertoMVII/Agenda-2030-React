@@ -10,7 +10,6 @@ export default function Quiz(){
   let[lock, setLock] = useState(false);
   let[score, setScore] = useState(0);
   let[result, setResult] = useState(false);
-  let[first, setFirst] = useState(false);
 
   let Option1 = useRef(null);
   let Option2 = useRef(null);
@@ -54,7 +53,7 @@ export default function Quiz(){
     }
   }
 
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
 
   const handleSubmit = (ev) => {
 		ev.preventDefault();
