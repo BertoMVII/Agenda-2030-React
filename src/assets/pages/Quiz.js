@@ -107,6 +107,9 @@ export default function Quiz(){
             .quizContainer .answers{
               ${index === 0? `display:none;` : `display:visible;`}
             }
+            .quizContainer .Index{
+              ${index === 0? `display:visible;` : `display:none;`}
+            }
       `}</style>
     </div>
   </>
