@@ -1,5 +1,8 @@
 export const questions = [
     {
+      question:"inserisci il tuo nome",
+      },
+      {
         question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         option1: "tempor ",
         option2: "tempor ",
