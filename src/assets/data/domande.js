@@ -31,12 +31,4 @@ export const questions = [
         option4: "velit ",
         ans: 3,
       },
-      {
-        question: "perspiciatis ",
-        option1: "fugit",
-        option2: "magni ",
-        option3: "enim ",
-        option4: "exercitationem ",
-        ans: 2,
-      },
 ];

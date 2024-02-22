@@ -2,67 +2,80 @@
 
 
 .quizContainer{
-    width: 70%;
+    font-family: 'Inter', sans-serif;
+    width: 60%;
     margin: auto;
-    margin-top: 100px;
-    background-color: rgb(248, 248, 248);
-    color: black;
+    margin-top: 70px;
+    background-color: white;
+    color: #262626;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 40px 50px;
 }
 .quizContainer hr{
-    height: 2px;
     border: none;
-    background-color: rgb(65, 65, 65);
+    height: 2px;
+    background-color: #707070;
 }
 .quizContainer h2{
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 27px;
+    font-size: 27px ;
+    font-weight: 500  ;
 }
-
 .quizContainer ul li{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
     display: flex;
     align-items: center;
     height: 70px;
     padding-left: 15px;
-    border: solid rgb(97, 97, 97);
+    border: 1px solid #686868;
     border-radius: 8px;
     margin-bottom: 20px;
-    font: 20px;
+    font-size: 20px;
     cursor: pointer;
 }
 
-.quizContainer button{
+.quizContainer button {
     margin: auto;
     width: 250px;
     height: 65px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
     background-color: #0470fe;
     color: white;
+    font-size: 25px;
+    font-weight: 500; 
     border-radius: 8px;
     cursor: pointer;
 }
 
-.quizContainer .index{
+.quizContainer input {
     margin: auto;
-    font: 18px;
-
+    width: 250px;
+    height: 65px;
+    background-color: #0470fe;
+    color: white;
+    font-size: 25px;
+    font-weight: 500; 
+    border-radius: 8px;
+    cursor: pointer;
 }
 
-.correct{
-    background-color: #aafedc;
-    border: #00d392;
+.quizContainer a {
+    margin: auto;
+    cursor: pointer;
 }
 
-.wrong{
-    background-color: #fc9c9c;
+
+.quizContainer .Index{
+    margin: auto;
+    font-size: 18px;
+}
+
+.quizContainer .correct{
+    background-color: #dffff2;
+    border-color: #00d397;
+}
+
+.quizContainer .wrong{
+    background-color: #ffebeb;
     border-color: #ff4a4a;
 }

@@ -21,7 +21,6 @@ ReactDOM.createRoot(rootElement).render(
         <Route path="/quiz" element={<Quiz />} />
         {Object.keys(obiettiviData).map((key) => {
           const routePath = `${key}`;
-          {/*I apologize to future me who's gonna look into this -Sorin*/}
           return <Route key={key} path={routePath} element={<Obiettivi obiettivoKey={key} />} />;
         })}
         {/* If wrong path redirect to home, !important: add alert (with return statement, DON'T use a hook, after redirection when url failed*/}
