@@ -108,7 +108,7 @@ export default function Quiz(){
               ${index === 0? `display:none;` : `display:visible;`}
             }
             .quizContainer .Index{
-              ${index === 0? `display:visible;` : `display:none;`}
+              ${index === 0? `display:none;` : `display:visible;`}
             }
       `}</style>
     </div>
