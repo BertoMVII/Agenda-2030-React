@@ -1,8 +1,10 @@
 import React, { useState, useRef, } from "react";
 import '../styles/quiz.css'
 import {questions} from '../data/domande'
+import { Button, Form, Container, Header } from 'semantic-ui-react';
+import axios from "axios";
 
-export default function Quiz(){ 
+export default function Quiz(props){ 
   let[index, setIndex] =  useState(0);
   let[question, setQuestion] = useState(questions[index]);
   let[lock, setLock] = useState(false);
@@ -31,6 +33,11 @@ export default function Quiz(){
     }
   }
 
+  let[first, setFirst] = useState(false);
+  if(index === 0){
+    setFirst(true);
+  }
+
   const next = () =>{
     if (lock === true) {
       if (index === questions.length -1) {
@@ -48,31 +55,30 @@ export default function Quiz(){
     }
   }
 
-  function Submit(ev) {
-    const formEle = score;
-    const formDatab = new FormData(formEle);
-    fetch(
-      "https://script.google.com/macros/s/AKfycbyMJmjtde9tB_dsSg_oQh1vTm9wYHKJjcxdS4k8sqNRwcTU0e6WrgciQTp6NLOhcGjP/exec",
-      {
-        method: "POST",
-        body: formDatab
-      }
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }
+  const [name, setName] = useState('');
+
+	const handleSubmit = (ev) => {
+		ev.preventDefault();
+
+		const objt = {name, score};
+
+		axios
+			.post(
+				'https://sheet.best/api/sheets/2a42e64c-d69e-4c4a-aa35-558c6034f22b',
+				objt
+			)
+			.then((response) => {
+				console.log(response);
+			});
+	};
+
 
   return( 
   <>
     <div className="quizContainer">
       <h1>Quiz</h1>
       <hr/>
-      {result?<></>:<>
+      {first?<>{result?<></>:<>
       <h2>{index+1}. {question.question }</h2>
       <ul>
 
@@ -86,8 +92,17 @@ export default function Quiz(){
       <div className="Index"> {index+1} di {questions.length} domande</div></>}
       {result?<>
       <h2>Hai ottenuto un punteggio di: {score} su {questions.length}</h2>
-      <a href="/"><button onClick={(ev) => Submit(ev)}>Home</button></a>
-      </>:<></>}
+      <a href="/"><button onClick={handleSubmit}>Home</button></a>
+      </>:<></>}</>:
+      <>
+        <form>
+        <input
+						placeholder="Inserisci il tuo nome"
+						onChange={(e) => setName(e.target.value)}
+					/>
+          <button onClick={handleSubmit}>Home</button>
+        </form>
+      </>}
     </div>
   </>
   )
