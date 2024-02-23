@@ -50,16 +50,6 @@
     top: 500px;
 }
 
-.circles .circle2{
-    z-index: -2;
-    position: absolute;
-    background-color: rgb(217, 36, 13);
-    width: 30vw;
-    height: 60vw;
-    border-radius: 30vw 0 0 30vw;
-    right: 0;
-    top: 120vw;
-}
 body{
     background-color: beige;
 }

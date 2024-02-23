@@ -67,12 +67,14 @@ export default function Quiz(){
 			.then((response) => {
 				console.log(response);
 			});
+
       window.location.href = '/';
 	};
 
-  const handleInputChange = (ev) => {
-    const inputValue = ev.target.value;
+  const handleInputChange = (eve) => {
+    const inputValue = eve.target.value;
     setName(inputValue);
+    console.log(name);
     setLock(true);
   };
 
@@ -94,7 +96,7 @@ export default function Quiz(){
 
       </ul>
       <button onClick={next}>Prossimo </button>
-      <div className="Index"> {index} di {questions.length-1} domande</div></>}
+      <div className="Index"> {index+1} di {questions.length} domande</div></>}
       {result?<>
       <h2>Hai ottenuto un punteggio di: {score} su {questions.length-1}</h2>
      <button onClick={handleSubmit}>Home</button>
@@ -105,9 +107,6 @@ export default function Quiz(){
               ${index === 0? `display:visible;` : `display:none;`}
             }
             .quizContainer .answers{
-              ${index === 0? `display:none;` : `display:visible;`}
-            }
-            .quizContainer .Index{
               ${index === 0? `display:none;` : `display:visible;`}
             }
       `}</style>
