@@ -27,6 +27,18 @@
     transform: scale(1.0);
 }
 
+@media (min-width: 48rem) {
+   .grid img:hover{
+    opacity: 100%;
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    }
+    .grid img{
+        width: 400px;
+    }
+}
+
 .circles .circle1{
     z-index: -2;
     position: absolute;
@@ -51,15 +63,3 @@
 body{
     background-color: beige;
 }
-
-@media (min-width: 48rem) {
-    .grid img:hover{
-     opacity: 100%;
-     -webkit-transform: scale(1.0);
-     -ms-transform: scale(1.1);
-     transform: scale(1.1);
-     }
-     .grid img{
-         width: 400px;
-     }
- }
