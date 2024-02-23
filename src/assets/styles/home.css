@@ -1,4 +1,4 @@
-.container{
+.containerHome{
     position: static;
     background-color: transparent;
     z-index: 0;
@@ -58,7 +58,7 @@
     height: 60vw;
     border-radius: 30vw 0 0 30vw;
     right: 0;
-    top: 2600px;
+    top: 120vw;
 }
 body{
     background-color: beige;

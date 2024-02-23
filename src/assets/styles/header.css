@@ -3,7 +3,6 @@
 body{
   overflow-x: hidden;
 }
-
 .visible{
   display: flex;
   justify-content: space-between;

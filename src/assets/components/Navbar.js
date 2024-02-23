@@ -28,8 +28,8 @@ export default function Navbar(){
             </ul>
           </div>
           <style jsx>{`
-            .body{
-              ${isChecked ? `overflow: hidden;` : `overflow: visible;`}
+            body {
+              ${isChecked ? `overflow-x: hidden; overflow-y: hidden;` : `overflow-x: hidden; overflow-y: visible;`}q
             }
             .navIcon {
               ${isChecked ? `background-color: transparent;` : `background-color: black;`}

@@ -36,7 +36,7 @@ const Animation = keyframes`
 
 export default function Home(){
   return (
-    <div className='container'>
+    <div className='containerHome'>
     <div className='grid'>
       <Reveal keyframes={Animation}>
         <a href='/obiettivo1'><img src={SDG1} alt='SDG 1' /></a>
