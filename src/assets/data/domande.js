@@ -1,6 +1,6 @@
 export const questions = [
     {
-      question:"inserisci il tuo nome",
+      question: "Inserisci il tuo nome",
       },
       {
         question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",

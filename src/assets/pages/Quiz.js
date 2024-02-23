@@ -67,14 +67,12 @@ export default function Quiz(){
 			.then((response) => {
 				console.log(response);
 			});
-
       window.location.href = '/';
 	};
 
-  const handleInputChange = (eve) => {
-    const inputValue = eve.target.value;
+  const handleInputChange = (ev) => {
+    const inputValue = ev.target.value;
     setName(inputValue);
-    console.log(name);
     setLock(true);
   };
 
@@ -87,6 +85,7 @@ export default function Quiz(){
       {result?<></>:<>
       <h2>{index+1}. {question.question}</h2>
       <input type="text" placeholder="inserire il tuo nome" className="text" value={name} onChange={handleInputChange}/>
+  
       <ul className="answers">
 
         <li ref={Option1} onClick={(e)=>{checkAns(e,1)}}>{question.option1}</li>
@@ -96,9 +95,10 @@ export default function Quiz(){
 
       </ul>
       <button onClick={next}>Prossimo </button>
-      <div className="Index"> {index+1} di {questions.length} domande</div></>}
+      <div className="Index"> {index} di {questions.length-1} domande</div></>}
       {result?<>
       <h2>Hai ottenuto un punteggio di: {score} su {questions.length-1}</h2>
+      <p>cliccare Home per inviare il punteggio</p>
      <button onClick={handleSubmit}>Home</button>
       </>:<></>}
 
@@ -109,6 +109,9 @@ export default function Quiz(){
             .quizContainer .answers{
               ${index === 0? `display:none;` : `display:visible;`}
             }
+            .quizContainer .Index{
+              ${index === 0? `display:none;` : `display:visible;`}
+              }
       `}</style>
     </div>
   </>
