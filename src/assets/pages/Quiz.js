@@ -1,4 +1,4 @@
-import React, { useState, useRef, } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import '../styles/quiz.css'
 import {questions} from '../data/domande'
 import axios from "axios";
@@ -18,7 +18,7 @@ export default function Quiz(){
 
   let option_array = [Option1, Option2, Option3, Option4];
 
-
+  const hasCompletedQuiz = localStorage.getItem('quizCompleted');
 
 
   const checkAns = (e, ans) => { 
@@ -68,6 +68,7 @@ export default function Quiz(){
 				console.log(response);
 			});
       window.location.href = '/';
+      localStorage.setItem('quizCompleted', 'true');
 	};
 
   const handleInputChange = (ev) => {
@@ -76,6 +77,17 @@ export default function Quiz(){
     setLock(true);
   };
 
+
+  if (hasCompletedQuiz) {
+    return(
+      <>
+         <div className="quizContainer">
+          <h1>Hai già completato il quiz</h1>
+          <a href="/"><button>Home</button></a>
+         </div>
+      </>
+    )
+  } else {
 
   return( 
   <>
@@ -116,4 +128,5 @@ export default function Quiz(){
     </div>
   </>
   )
+  }
 }
