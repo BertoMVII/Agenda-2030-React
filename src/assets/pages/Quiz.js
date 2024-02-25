@@ -55,16 +55,13 @@ export default function Quiz(){
 
   const [name, setName] = useState("");
 
-  const handleSubmit = (ev) => {
-		ev.preventDefault();
+  const handleSubmit = (eve) => {
+		eve.preventDefault();
 
     const objt = {name, score};
-		axios
-			.post(
-				'https://sheet.best/api/sheets/2a42e64c-d69e-4c4a-aa35-558c6034f22b',
-				objt
-			)
-			.then((response) => {
+		axios.post(
+				'https://sheet.best/api/sheets/2a42e64c-d69e-4c4a-aa35-558c6034f22b',objt
+			).then((response) => {
 				console.log(response);
 			});
       window.location.href = '/';
