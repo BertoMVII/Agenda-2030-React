@@ -60,7 +60,7 @@ export default function Quiz(){
 
     const objt = {name, score};
 		axios.post(
-				'https://sheet.best/api/sheets/2a42e64c-d69e-4c4a-aa35-558c6034f22b',objt
+				'https://sheet.best/api/sheets/2a42e64c-d69e-4c4a-aa35-558c6034f22b', objt 
 			).then((response) => {
 				console.log(response);
 			});
